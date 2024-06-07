@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <link rel="stylesheet" href="CSS/stylesheet.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="CSS/tailwind.css"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+</head>
+
+<body>
+    <header class="relative bg-transparent w-full h-[86.4px] py-2.5 z-[999]">
+        <div class="main-navbar">
+            <div class="lg:container relative mx-auto px-4">
+                <div class="w-[180px] h-[64px] items-center relative flex float-left">
+                    <a href="#" class="logo table-cell">
+                        <img src="./img/01/logo.png" alt="" class="w-[200px]">
+                    </a>
+                </div>
+
+                <div class="float-right items-center h-[64px] lg:flex relative hidden gap-[10px] pl-[60px]">
+                    <div
+                        class="bg-white w-[45px] h-[45px] shadow-[0_10px_10px_0_rgba(0,0,0,0.1)] flex items-center justify-center rounded">
+                        <img class="w-[23.94px] h-[24px]" src="./img/01/user.png" alt="">
+                    </div>
+                    <div
+                        class="bg-white relative w-[45px] h-[45px] shadow-[0_10px_10px_0_rgba(0,0,0,0.1)] flex items-center justify-center rounded">
+                        <img class="w-[23.94px] h-[24px]" src="./img/01/bag.png" alt="">
+                        <div
+                            class="absolute inline-flex items-center justify-center w-5 h-5 text-xs font-medium text-xs leading-5 font-bold text-white bg-[#666666] rounded-full -top-2 -end-2 dark:border-gray-900">
+                            6</div>
+                    </div>
+                </div>
+
+                <div class="nav-wrapper lg:justify-end lg:flex-row flex-col lg:gap-0 gap-5 flex">
+                    <div class="flex items-center">
+                        <ul class="flex">
+                            <li class="px-3	py-5 font-poppins font-normal flex"><a class="text-[#7DA640]"
+                                    href="index.html">Home</a><i
+                                    class="fa-solid fa-angle-down ml-[7px] pt-2 text-[10.5px] flex items-center"></i>
+                            </li>
+                            <li class="px-3	py-5 font-poppins font-normal flex"><a
+                                    class="hover:text-[#6d9533] smooth-animtion" href="#">Pages</a><i
+                                    class="fa-solid fa-angle-down ml-[7px] pt-2 text-[10.5px] flex items-center"></i>
+                            </li>
+                            <li class="px-3	py-5 font-poppins font-normal flex"><a
+                                    class="hover:text-[#6d9533] smooth-animtion" href="shop-cart.html">Shop</a><i
+                                    class="fa-solid fa-angle-down ml-[7px] pt-2 text-[10.5px] flex items-center"></i>
+                            </li>
+                            <li class="px-3	py-5 font-poppins font-normal flex"><a
+                                    class="hover:text-[#6d9533] smooth-animtion" href="shop-cart.html">Blog</a><i
+                                    class="fa-solid fa-angle-down ml-[7px] pt-2 text-[10.5px] flex items-center"></i>
+                            </li>
+                            <li class="px-3	py-5 font-poppins font-normal flex"><a
+                                    class="hover:text-[#6d9533] smooth-animtion" href="contact-us.html">Contact
+                                    Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bar hidden flex items-center">
+                        <i class="text-3xl fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- -=-=-=-=-=-=-bannner-=-=-=-=-=-=-= -->
+
+    <div class="banner bg-[var(--primary)] z-[1] w-full h-screen  max-h-[930px] min-h-[800px] overflow-hidden relative">
+        <div class="lg:container h-full relative mx-auto px-[15px]">
+            <div class="row flex items-center justify-center md:justify-between justify-center h-full">
+                <div class="banner-part-1 md:w-7/12 px-[15px]">
+                    <div class="banner-conant mb-0 md:mb-[60px]">
+                        <span class="font-medium md:text-xl text-base text-[var(--secondary-dark)]">High Quality Test
+                            Station
+                        </span>
+
+                        <h1 class="font-lobster text-[80px] leading-[1.2] mb-2.5 text-black2">Choosing The<br> Best
+                            <span class="text-[var(--primary)]">Quality Food</span>
+                        </h1>
+
+                        <p
+                            class="max-w-[500px] lg:text-lg sm:text-base text-sm leading-[27px] font-poppins text-[var(--banner-text-color)]">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                    </div>
+
+                    <div class="banner-btn item-center flex lg:mt-10 mt-[25px] gap-[30px]">
+                        <a class="btn btn-primary btn-md btn-hover-1" href="#"><span
+                                class="font-medium font-poppins">Book a Table</span></a>
+                        <a class="btn btn-outline text-primary btn-md btn-hover-1" href="#"><span
+                                class="text-[var(--primary)] font-medium font-poppins">View More</span></a>
+                    </div>
+
+                    <div class="main-num">
+                        <div class="Firstswiper swiper mySwiper First-slider w-[612px] h-auto">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide swiper-slide-thumb-active ">
+                                    <div class="food-card  flex items-center">
+                                        <div class="img w-[80px] min-w-[80px] overflow-hidden rounded-md">
+                                            <img src="img/01/first-slider.jpg" alt="">
+                                        </div>
+                                        <div class="content ml-[15px]">
+                                            <h5 class="mb-1 text-[1.25rem] font-semibold leading-1.75rem">Dinner</h5>
+                                            <p class="text-[0.875rem] leading-[1.25rem]">Lorem ipsum dolor sit amet,
+                                                consectetur adipiscing elit</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="food-card flex items-center">
+                                        <div class="img w-[80px] min-w-[80px] overflow-hidden rounded-md">
+                                            <img src="img/01/2-icon.jpg" alt="">
+                                        </div>
+                                        <div class="content ml-[15px]">
+                                            <h5 class="mb-1 text-[1.25rem] font-semibold leading-1.75rem">Lunch</h5>
+                                            <p class="text-[0.875rem] leading-[1.25rem]">Lorem ipsum dolor sit amet,
+                                                consectetur adipiscing elit</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="food-card flex items-center">
+                                        <div class="img w-[80px] min-w-[80px] overflow-hidden rounded-md">
+                                            <img src="img/01/3-icon.jpg" alt="">
+                                        </div>
+                                        <div class="content ml-[15px]">
+                                            <h5 class="mb-1 text-[1.25rem] font-semibold leading-1.75rem">BreakFast</h5>
+                                            <p class="text-[0.875rem] leading-[1.25rem]">Lorem ipsum dolor sit amet,
+                                                consectetur adipiscing elit</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div
+                            class="first-thumb-button-prev btn-prev-1 top-[50%] absolute translate-y-[-50%] h-[80px] rounded-md w-[27px] leading-[80px] text-center text-[#222222] text-sm duration-500 hover:bg-[#fe9f10] hover:text-white bg-[#2222221a] left-0 right-auto">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </div>
+
+                        <div
+                            class="first-thumb-button-next btn-next-1 top-[50%] absolute translate-y-[-50%] h-[80px] rounded-md w-[27px] leading-[80px] text-center text-[#222222] text-sm duration-500 hover:bg-[#fe9f10] hover:text-white bg-[#2222221a] right-0">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="banner-part-2 px-[15px]">
+                    <div class="banner-media relative top-[70px] right-[82px]">
+                        <img src="img/01/pic1.png" alt=""
+                            class="xl:w-full lg:w-[450px] md:w-[100%] sm:w-[250px] w-[250px]">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner-bg">
+            <img class="absolute top-0 right-0 z-[-1] opacity-25 w-6/12" src="img/01/img3.png" alt="">
+            <img class="absolute top-[156px] right-[147px]" src="img/01/img1.png" alt="">
+            <img class="absolute top-[100px] left-1/2 w-[150px] animation-motion" src="img/01/img2.png" alt="">
+        </div>
+    </div>
+
+    <!-- =-=-=-=-=-=-=-=-=-special menu=-=-=-=-=-=-=-=-=- -->
+
+    <div class="special lg:pt-[100px] lg:pb-[70px] pt-[50px] pb-[40px] bg-white overflow-hidden relative">
+        <div class="lg:container mx-auto px-4">
+            <div class="mx-auto text-center mb-[50px] relative">
+                <h2 class="font-lobster text-6xl mb-[15px]">Special Menu</h2>
+            </div>
+
+            <div class="row flex w-[1200px] mx-auto">
+
+                <!-- pizaa -->
+
+                <div class="lg:w-1/4 px-[15px] pb-[30px]">
+                    <div
+                        class="group rounded-lg pt-10 px-5 pb-[30px] bg-white text-center border border-gray-border hover:border-[var(--primary)] h-full menu-box flex duration-500 flex-col relative overflow-hidden z-[1]">
+                        <div
+                            class="w-[150px] min-w-[150px] h-[150px] mt-0 mx-auto mb-[10px] rounded-full border-[9px] border-white duration-500 z-[1]">
+                            <img src="img/01/pic1 (1).jpg" class="rounded-full relative group-hover:animate-spin"
+                                alt="">
+                        </div>
+                        <div class="mx-auto">
+                            <h4 class="mb-2.5"><a
+                                    class="font-poppins text-[var(--title)] font-semibold text-2xl hover:text-[var(--primary)]"
+                                    href="#">Pizza</a></h4>
+                            <p class="mb-2 font-poppins">Lorem ipsum dolor sit amet consectetur adipiscing.</p>
+                            <h4 class="text-[var(--primary)] text-xl font-semibold font-poppins">$55.00</h4>
+                            <a href="#" class="btn btn-primary btn-hover-2 mt-[18px] font">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rice -->
+
+                <div class="lg:w-1/4 px-[15px] pb-[30px]">
+                    <div
+                        class="group rounded-lg pt-10 px-5 pb-[30px] bg-white text-center border border-gray-border hover:border-[var(--primary)] h-full menu-box flex duration-500 flex-col relative overflow-hidden z-[1]">
+                        <div
+                            class="w-[150px] min-w-[150px] h-[150px] mt-0 mx-auto mb-[10px] rounded-full border-[9px] border-white duration-500 z-[1]">
+                            <img src="img/01/rice.jpg" class="rounded-full relative group-hover:animate-spin" alt="">
+                        </div>
+                        <div class="mx-auto">
+                            <h4 class="mb-2.5"><a
+                                    class="font-poppins text-[var(--title)] font-semibold text-2xl hover:text-[var(--primary)]"
+                                    href="#">Rice</a></h4>
+                            <p class="mb-2 font-poppins">Lorem ipsum dolor sit amet consectetur adipiscing.</p>
+                            <h4 class="text-[var(--primary)] text-xl font-semibold font-poppins">$50.00</h4>
+                            <a href="#" class="btn btn-primary btn-hover-2 mt-[18px] font">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Green Salad -->
+
+                <div class="lg:w-1/4 px-[15px] pb-[30px]">
+                    <div
+                        class="group rounded-lg pt-10 px-5 pb-[30px] bg-white text-center border border-gray-border hover:border-[var(--primary)] h-full menu-box flex duration-500 flex-col relative overflow-hidden z-[1]">
+                        <div
+                            class="w-[150px] min-w-[150px] h-[150px] mt-0 mx-auto mb-[10px] rounded-full border-[9px] border-white duration-500 z-[1]">
+                            <img src="img/01/green-salad.jpg" class="rounded-full relative group-hover:animate-spin"
+                                alt="">
+                        </div>
+                        <div class="mx-auto">
+                            <h4 class="mb-2.5"><a
+                                    class="font-poppins text-[var(--title)] font-semibold text-2xl hover:text-[var(--primary)]"
+                                    href="#">Green Salad</a></h4>
+                            <p class="mb-2 font-poppins">Lorem ipsum dolor sit amet consectetur adipiscing.</p>
+                            <h4 class="text-[var(--primary)] text-xl font-semibold font-poppins">$55.00</h4>
+                            <a href="#" class="btn btn-primary btn-hover-2 mt-[18px] font">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- pasta -->
+
+                <div class="lg:w-1/4 px-[15px] pb-[30px]">
+                    <div
+                        class="group rounded-lg pt-10 px-5 pb-[30px] bg-white text-center border border-gray-border hover:border-[var(--primary)] h-full menu-box flex duration-500 flex-col relative overflow-hidden z-[1]">
+                        <div
+                            class="w-[150px] min-w-[150px] h-[150px] mt-0 mx-auto mb-[10px] rounded-full border-[9px] border-white duration-500 z-[1]">
+                            <img src="img/01/pasta.jpg" class="rounded-full relative group-hover:animate-spin" alt="">
+                        </div>
+                        <div class="mx-auto">
+                            <h4 class="mb-2.5"><a
+                                    class="font-poppins text-[var(--title)] font-semibold text-2xl hover:text-[var(--primary)]"
+                                    href="#">Pasta </a></h4>
+                            <p class="mb-2 font-poppins">Lorem ipsum dolor sit amet consectetur adipiscing.</p>
+                            <h4 class="text-[var(--primary)] text-xl font-semibold font-poppins">$55.00</h4>
+                            <a href="#" class="btn btn-primary btn-hover-2 mt-[18px] font">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="img/01/bg-burger.png" class="bg1 bottom-0 left-[-275px] absolute max-2xl:hidden animate-move"
+                alt="">
+            <img src="img/01/bg-nuts.png"
+                class="bg2 right-[40px] max-2xl:right-0 top-[100px] max-2xl:top-[28px] absolute 2xl:block" alt="">
+        </div>
+    </div>
+
+    <!--=-=-=-=-=-=-=-=-=- to day menu =-=-=-=-=-=-=-=-=--->
+
+    <div class="bg-[var(--bg-light)] pt-[100px] pb-0 relative overflow-hidden">
+        <div class="lg:container mx-auto px-4">
+            <div class="mb-[50px] mb-[25px] relative mx-auto text-center">
+                <h2 class="font-lobster text-6xl text-[var(--title)]">Today's Menu</h2>
+            </div>
+            <div class="row w-[1200px] mx-auto flex flex-wrap">
+
+                <!-- pasta -->
+
+                <div class="lg:w-1/4 sm:w-1/2 w-full pl-[15px] pr-[15px] pb-[30px]">
+                    <div
+                        class="rounded-[10px] shadow-[0_15px_55px_rgba(35,35,35,0.15)] duration-500 relative z-[1] overflow-hidden group full-img-box">
+                        <div class="w-full min-w-full h-full">
+                            <img src="img/01/big-pasta.jpg" class="w-full block" alt="">
+                        </div>
+                        <span
+                            class="absolute top-0 bg-[var(--secondary-dark)] left-0 text-white rounded-ee-[10px] uppercase py-[4px] px-2.5 font-semibold text-xs leading-[18px] z-[2]">top
+                            seller</span>
+                        <div
+                            class="content bg-white text-center py-[23px] px-[15px] block duration-500 absolute w-full bottom-0 mb-0 group-hover:bottom-[-150px] group-hover:opacity-0">
+                            <h4 class="mb-2.5 text-xl font-semibold font-poppins"><a href="#">Pasta</a></h4>
+                            <p class="mb-[2px] font-poppins">Lorem ipsum dolor sit amet, dipiscing elit, sed</p>
+                        </div>
+
+                        <div
+                            class="hover-content flex justify-between py-5 px-[30px] absolute bottom-0 opacity-0 z-[2] w-full items-center duration-500 mb-[-100px] group-hover:mb-0 group-hover:opacity-100">
+                            <div class="info relative">
+                                <h5 class="mb-0 text-xl text-white font-semibold font-poppins"><a href="#">Pasta</a>
+                                </h5>
+                                <span
+                                    class="text-xl text-[var(--secondary-dark)] font-bold leading-[30px]">$35.00</span>
+                            </div>
+                            <a class="w-[45px]" href="#">
+                                <div
+                                    class="bg-white rounded-md max-w-[45px] h-[45px] min-h-[45px] leading-[45px] flex items-center relative text-2xl text-center">
+                                    <img class="mx-auto" src="img/01/shopping-cart-img.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shake -->
+
+                <div class="lg:w-1/4 sm:w-1/2 w-full pl-[15px] pr-[15px] pb-[30px]">
+                    <div
+                        class="rounded-[10px] shadow-[0_15px_55px_rgba(35,35,35,0.15)] duration-500 relative z-[1] overflow-hidden group full-img-box">
+                        <div class="w-full min-w-full h-full">
+                            <img src="img/01/shek.jpg" class="w-full block" alt="">
+                        </div>
+                        <span
+                            class="absolute top-0 bg-[var(--secondary-dark)] left-0 text-white rounded-ee-[10px] uppercase py-[4px] px-2.5 font-semibold text-xs leading-[18px] z-[2]">top
+                            seller</span>
+                        <div
+                            class="content bg-white text-center py-[23px] px-[15px] block duration-500 absolute w-full bottom-0 mb-0 group-hover:bottom-[-150px] group-hover:opacity-0">
+                            <h4 class="mb-2.5 text-xl font-semibold font-poppins"><a href="#">Oreo Shake</a></h4>
+                            <p class="mb-[2px] font-poppins">Lorem ipsum dolor sit amet, dipiscing elit, sed</p>
+                        </div>
+
+                        <div
+                            class="hover-content flex justify-between py-5 px-[30px] absolute bottom-0 opacity-0 z-[2] w-full items-center duration-500 mb-[-100px] group-hover:mb-0 group-hover:opacity-100">
+                            <div class="info relative">
+                                <h5 class="mb-0 text-xl text-white font-semibold font-poppins"><a href="#">Shake</a>
+                                </h5>
+                                <span
+                                    class="text-xl text-[var(--secondary-dark)] font-bold leading-[30px]">$15.00</span>
+                            </div>
+                            <a class="w-[45px]" href="#">
+                                <div
+                                    class="bg-white rounded-md max-w-[45px] h-[45px] min-h-[45px] leading-[45px] flex items-center relative text-2xl text-center">
+                                    <img class="mx-auto" src="img/01/shopping-cart-img.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- dal -->
+
+                <div class="lg:w-1/4 sm:w-1/2 w-full pl-[15px] pr-[15px] pb-[30px]">
+                    <div
+                        class="rounded-[10px] shadow-[0_15px_55px_rgba(35,35,35,0.15)] duration-500 relative z-[1] overflow-hidden group full-img-box">
+                        <div class="w-full min-w-full h-full">
+                            <img src="img/01/dal today-menu.jpg" class="w-full block" alt="">
+                        </div>
+                        <span
+                            class="absolute top-0 bg-[var(--secondary-dark)] left-0 text-white rounded-ee-[10px] uppercase py-[4px] px-2.5 font-semibold text-xs leading-[18px] z-[2]">top
+                            seller</span>
+                        <div
+                            class="content bg-white text-center py-[23px] px-[15px] block duration-500 absolute w-full bottom-0 mb-0 group-hover:bottom-[-150px] group-hover:opacity-0">
+                            <h4 class="mb-2.5 text-xl font-semibold font-poppins"><a href="#">Dal Fry</a></h4>
+                            <p class="mb-[2px] font-poppins">Lorem ipsum dolor sit amet, dipiscing elit, sed</p>
+                        </div>
+
+                        <div
+                            class="hover-content flex justify-between py-5 px-[30px] absolute bottom-0 opacity-0 z-[2] w-full items-center duration-500 mb-[-100px] group-hover:mb-0 group-hover:opacity-100">
+                            <div class="info relative">
+                                <h5 class="mb-0 text-xl text-white font-semibold font-poppins"><a href="#">Dal</a></h5>
+                                <span
+                                    class="text-xl text-[var(--secondary-dark)] font-bold leading-[30px]">$25.00</span>
+                            </div>
+                            <a class="w-[45px]" href="#">
+                                <div
+                                    class="bg-white rounded-md max-w-[45px] h-[45px] min-h-[45px] leading-[45px] flex items-center relative text-2xl text-center">
+                                    <img class="mx-auto" src="img/01/shopping-cart-img.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- pizza -->
+
+                <div class="lg:w-1/4 sm:w-1/2 w-full pl-[15px] pr-[15px] pb-[30px]">
+                    <div
+                        class="rounded-[10px] shadow-[0_15px_55px_rgba(35,35,35,0.15)] duration-500 relative z-[1] overflow-hidden group full-img-box">
+                        <div class="w-full min-w-full h-full">
+                            <img src="img/01/big-pizza.jpg" class="w-full block" alt="">
+                        </div>
+                        <span
+                            class="absolute top-0 bg-[var(--secondary-dark)] left-0 text-white rounded-ee-[10px] uppercase py-[4px] px-2.5 font-semibold text-xs leading-[18px] z-[2]">top
+                            seller</span>
+                        <div
+                            class="content bg-white text-center py-[23px] px-[15px] block duration-500 absolute w-full bottom-0 mb-0 group-hover:bottom-[-150px] group-hover:opacity-0">
+                            <h4 class="mb-2.5 text-xl font-semibold font-poppins"><a href="#">Pizza</a></h4>
+                            <p class="mb-[2px] font-poppins">Lorem ipsum dolor sit amet, dipiscing elit, sed</p>
+                        </div>
+
+                        <div
+                            class="hover-content flex justify-between py-5 px-[30px] absolute bottom-0 opacity-0 z-[2] w-full items-center duration-500 mb-[-100px] group-hover:mb-0 group-hover:opacity-100">
+                            <div class="info relative">
+                                <h5 class="mb-0 text-xl text-white font-semibold font-poppins"><a href="#">Pizza</a>
+                                </h5>
+                                <span
+                                    class="text-xl text-[var(--secondary-dark)] font-bold leading-[30px]">$35.00</span>
+                            </div>
+                            <a class="w-[45px]" href="#">
+                                <div
+                                    class="bg-white rounded-md max-w-[45px] h-[45px] min-h-[45px] leading-[45px] flex items-center relative text-2xl text-center">
+                                    <img class="mx-auto" src="img/01/shopping-cart-img.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full text-center mt-[10px]">
+                    <a class="btn btn-primary btn-md btn-hover-1" href="#"><span class="font-medium font-poppins">Book a
+                            Table</span></a>
+                </div>
+            </div>
+        </div>
+
+        <img src="img/01/bg-pan.png"
+            class="2xl:right-[20px] xl:right-[20px] 2xl:top-[20px] xl:top-[10px] absolute xl:block hidden" alt="">
+    </div>
+
+    <!--=-=-=-=-=-=-=-=-=-Quality Service's=-=-=-=-=-=-=-=-=--->
+
+    <div
+        class="bg-[var(--bg-light)]  relative  section-wrapper-3  after:content-[''] after:h-[200px] after:w-full after:bg-white after:absolute after:bottom-0 after:left-0 after:z-[0] sm:py-[100px] py-[50px]">
+        <div class="lg:container relative mx-auto px-4">
+            <div class="mb-[50px] z-[1] mb-[25px] relative mx-auto text-center">
+                <h2 class="font-lobster text-6xl">Quality Service's</h2>
+            </div>
+            <div class="icon-wrapper1 bg-white w-[1200px] mx-auto rounded-[15px] relative z-[1]">
+                <div class="row flex">
+                    <div class="w-full lg:w-1/4 sm:w-1/2 px-[15px] ">
+
+                        <div class="icon-box-wrapper icon-box-wrapper-1 rounded-[15px] group text-center">
+                            <div class="inner-content relative z-[1]">
+                                <div class="mb-[20px]">
+                                    <img class="mx-auto w-[72px] h-[72px]" src="img/01/001-restaurant.png" alt="">
+                                </div>
+                                <div class="icon-content overflow-hidden text-center">
+                                    <h5 class="mb-2 font-poppins text-xl font-semibold">Restaurant</h5>
+                                    <p class="sm:text-base text-[15px] group-hover:text-white font-poppins ">Lorem ipsum
+                                        dolor sit amet, dipiscing elit, sed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="w-full lg:w-1/4 sm:w-1/2 px-[15px]">
+                        <div class="icon-box-wrapper icon-box-wrapper-2 rounded-[15px] group text-center">
+                            <div class="inner-content relative z-[1]">
+                                <div class="mb-[20px]">
+                                    <img class="mx-auto w-[72px] h-[72px]" src="img/01/002-martini.png" alt="">
+                                </div>
+                                <div class="icon-content overflow-hidden text-center">
+                                    <h5 class="mb-2 font-poppins text-xl font-semibold">Bar</h5>
+                                    <p class="sm:text-base text-[15px] group-hover:text-white font-poppins ">Lorem ipsum
+                                        dolor sit amet, dipiscing elit, sed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="w-full lg:w-1/4 sm:w-1/2 px-[15px]">
+                        <div class="icon-box-wrapper icon-box-wrapper-3 rounded-[15px] group text-center">
+                            <div class="inner-content relative z-[1]">
+                                <div class="mb-[20px]">
+                                    <img class="mx-auto w-[72px] h-[72px]" src="img/01/003-coffee-cup.png" alt="">
+                                </div>
+                                <div class="icon-content overflow-hidden text-center">
+                                    <h5 class="mb-2 font-poppins text-xl font-semibold">Cafe</h5>
+                                    <p class="sm:text-base text-[15px] group-hover:text-white font-poppins ">Lorem ipsum
+                                        dolor sit amet, dipiscing elit, sed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="w-full lg:w-1/4 sm:w-1/2 px-[15px]">
+                        <div class="icon-box-wrapper icon-box-wrapper-4 rounded-[15px] group text-center">
+                            <div class="inner-content relative z-[1]">
+                                <div class="mb-[20px]">
+                                    <img class="mx-auto w-[72px] h-[72px]" src="img/01/cake.png" alt="">
+                                </div>
+                                <div class="icon-content overflow-hidden text-center">
+                                    <h5 class="mb-2 font-poppins text-xl font-semibold">Dessert</h5>
+                                    <p class="sm:text-base text-[15px] group-hover:text-white font-poppins ">Lorem ipsum
+                                        dolor sit amet, dipiscing elit, sed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="img/01/bg-nuts.png" class="left-[20px] top-[20px] absolute block " alt="">
+    </div>
+
+    <!-- =-=-=-=-=-=-=-=-=-reservation=-=-=-=-=-=-=-=-=- -->
+
+    <div
+        class="big-bg bg-fixed sm:py-[100px] py-[40px] relative z-[2] after:content-[''] after:absolute after:z-[-1] after:bg-black-blur after:opacity-100 after:w-full after:h-full after:top-0 after:left-0 after:backdrop-blur-[6px]">
+        <div class="container mx-auto px-4">
+            <div class="mb-[50px] 2xl:mb-[50px] relative mx-auto text-center">
+                <h2 class="text-6xl font-lobster text-white">Reservation</h2>
+            </div>
+            <form>
+                <div class="row flex flex-wrap w-[1200px] mx-auto px-4">
+
+                    <div class="lg:w-1/3 md:w-1/2 w-full sm:mb-[50px] mb-[30px] pl-[15px] pr-[15px]">
+                        <div class="relative flex gap-5 items-center w-full border-b border-white">
+                            <div class="w-[35px] h-[50px] text-center leading-10">
+                                <!-- <i class="fa-regular fa-user text-white text-2xl align-middle inline-flex"></i> -->
+                                <img src="./img/01/white-user.png" class="w-[24px] align-middle inline-flex" alt="">
+                            </div>
+                            <input name="dzName" required="" type="text"
+                                class="placeholder:font-poppins placeholder:text-white input-field p-0 leading-2xl pb-0.5 text-lg border-0 text-white font-medium h-[48px] outline-none relative top-[-5px] focus:ring-0 w-full"
+                                placeholder="Your Name" fdprocessedid="e9tz7p">
+                        </div>
+                    </div>
+
+                    <div class="lg:w-1/3 md:w-1/2 w-full sm:mb-[50px] mb-[30px] pl-[15px] pr-[15px]">
+                        <div class="relative flex gap-5 items-center w-full border-b border-white">
+                            <div class="w-[35px] h-[50px] text-center leading-10">
+                                <img src="./img/01/white-phone-call.png" class="w-[28px] align-middle inline-flex"
+                                    alt="">
+                            </div>
+                            <input name="dzName" required="" type="text"
+                                class="placeholder:font-poppins placeholder:text-white input-field p-0 leading-2xl pb-0.5 text-lg border-0 text-white font-medium h-[48px] outline-none relative top-[-5px] focus:ring-0 w-full"
+                                placeholder="Phone Number" fdprocessedid="e9tz7p">
+                        </div>
+                    </div>
+
+                    <div class="lg:w-1/3 md:w-1/2 w-full sm:mb-[50px] mb-[30px] pl-[15px] pr-[15px]">
+                        <div class="relative flex gap-5 items-center w-full border-b border-white">
+                            <div class="w-[35px] h-[50px] text-center leading-10">
+                                <img src="./img/01/white-mail.png" class="w-[28px] align-middle inline-flex" alt="">
+                            </div>
+                            <input name="dzName" required="" type="text"
+                                class="placeholder:font-poppins placeholder:text-white input-field p-0 leading-2xl pb-0.5 text-lg border-0 text-white font-medium h-[48px] outline-none relative top-[-5px] focus:ring-0 w-full"
+                                placeholder="Your Email" fdprocessedid="e9tz7p">
+                        </div>
+                    </div>
+
+                    <div class="lg:w-1/3 md:w-1/2 w-full sm:mb-[50px] mb-[30px] pl-[15px] pr-[15px]">
+                        <div class="relative flex gap-5 items-center w-full border-b border-white">
+                            <div class="w-[35px] h-[50px] text-center leading-10">
+                                <img src="./img/01/white-two-people.png"
+                                    class="w-[28px] pt-[2px] text-2xl align-middle inline-flex" alt="">
+                            </div>
+                            <input name="dzName" required="" type="text"
+                                class="placeholder:font-poppins placeholder:text-white input-field p-0 leading-2xl pb-0.5 text-lg border-0 text-white font-medium h-[48px] outline-none relative top-[-5px] focus:ring-0 w-full"
+                                placeholder="Number Of People" fdprocessedid="e9tz7p">
+                        </div>
+                    </div>
+
+                    <div class="lg:w-1/3 md:w-1/2 w-full sm:mb-[50px] mb-[30px] pl-[15px] pr-[15px]">
+                        <div class="relative flex gap-5 items-center w-full border-b border-white">
+                            <div class="w-[35px] h-[50px] text-center leading-10">
+                                <img src="./img/01/white-calendar-date.png " class="w-[28px] align-middle inline-flex"
+                                    alt="">
+                            </div>
+                            <input name="dzName" required="" type="text"
+                                class="placeholder:font-poppins placeholder:text-white input-field p-0 leading-2xl pb-0.5 text-lg border-0 text-white font-medium h-[48px] outline-none relative top-[-5px] focus:ring-0 w-full"
+                                placeholder="Date" fdprocessedid="e9tz7p">
+                        </div>
+                    </div>
+
+                    <div class="lg:w-1/3 md:w-1/2 w-full sm:mb-[50px] mb-[30px] pl-[15px] pr-[15px]">
+                        <div class="relative flex gap-5 items-center w-full border-b border-white">
+                            <div class="w-[35px] h-[50px] text-center leading-10">
+                                <img src="./img/01/white-clock.png" class="w-[28px] align-middle inline-flex" alt="">
+                            </div>
+                            <input name="dzName" required="" type="text"
+                                class="placeholder:font-poppins placeholder:text-white input-field p-0 leading-2xl pb-0.5 text-lg border-0 text-white font-medium h-[48px] outline-none relative top-[-5px] focus:ring-0 w-full"
+                                placeholder="Time" fdprocessedid="e9tz7p">
+                        </div>
+                    </div>
+
+                    <div class="w-full text-center">
+                        <button type="submit" name="submit" value="submit"
+                            class="btn-lg btn-hover-1 py-[18px] px-[50px] btn btn-white bg-white font-medium text-base leading-2xl overflow-hidden z-[1] text-black2 rounded-[6px] relative inline-flex items-center justify-center duration-500 focus:ring-0"
+                            fdprocessedid="ojx1h">
+                            <span class="font-poppins">Book a Table</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--=-=-=-=-=-=-=-=-=- Master Chefs =-=-=-=-=-=-=-=-=--->
+
+    <section class="bg-light sm:py-[100px] py-[40px] relative overflow-hidden">
+        <div class="container w-[1200px] mx-auto px-4">
+            <div class="2xl:mb-[50px] mb-[25px] relative mx-auto text-center">
+                <h2 class="font-lobster">Master Chefs</h2>
+            </div>
+            <div class="swiper team-swiper overflow-visible swiper-visible">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" role="group" aria-label="1 / 8" data-swiper-slide-index="0">
+                        <div class="slide-box">
+                            <div
+                                class="shadow-[0_15px_55px_rgba(35,35,35,0.15)] rounded-[10px] bg-white overflow-hidden group">
+                                <div
+                                    class="relative  overflow-hidden z-[1] before:content-[''] before:absolute before:w-[200px] before:h-[200px] before:bg-black2 before:top-[-100px] before:left-[-100px] before:opacity-30 before:z-[1] before:duration-500 before:rounded-full before:scale-50 before:translate-x-[-50%] group-hover:before:scale-[7]">
+                                    <img src="img/01/slide-box-1.jpg" alt="/"
+                                        class="group-hover:scale-110 duration-500 block w-full">
+                                </div>
+                                <div class="content bg-white flex justify-between items-center py-[15px] px-5">
+                                    <div class="clearfix">
+                                        <h6 class="mb-[2px] ">
+                                            <a href="team-detail.html">
+                                                Sarah Albert
+                                            </a>
+                                        </h6>
+                                        <span class="font-normal text-sm leading-5 text-primary">Senior Chef</span>
+                                    </div>
+                                    <ul class="team-social">
+                                        <li>
+                                            <a href="javascript:void(0);"
+                                                class="text-xl inline-block h-10 w-10 leading-10 text-center rounded-lg bg-primary text-white pt-[2px]">
+                                                <i class="flaticon-share"></i>
+                                            </a>
+                                            <ul
+                                                class="sub-team-social absolute bottom-[20px] z-[1] w-10 rounded-lg opacity-0 duration-500 	hover:opacity-100 hover:pb-[80px]">
+                                                <li class="mb-2 relative">
+                                                    <a href="javascript:void(0);"
+                                                        class="text-white duration-500 text-center text-lg bg-[#4867AA] h-10 w-10 flex items-center justify-center rounded-lg">
+                                                        <i class="fab fa-facebook-f"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-2 relative">
+                                                    <a href="javascript:void(0);"
+                                                        class="text-white duration-500 text-center text-lg bg-[#81B2DF] h-10 w-10 flex items-center justify-center rounded-lg">
+                                                        <i class="fab fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-2 relative">
+                                                    <a href="javascript:void(0);"
+                                                        class="text-white duration-500 text-center text-lg bg-[#D74141] h-10 w-10 flex items-center justify-center rounded-lg">
+                                                        <i class="fab fa-instagram"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-2 relative">
+                                                    <a href="javascript:void(0);"
+                                                        class="text-white duration-500 text-center text-lg bg-[#3A9DF9] h-10 w-10 flex items-center justify-center rounded-lg">
+                                                        <i class="fa-brands fa-linkedin-in"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" role="group" aria-label="1 / 8" data-swiper-slide-index="0">
+                        <div class="slide-box">
+                            <div
+                                class="shadow-[0_15px_55px_rgba(35,35,35,0.15)] rounded-[10px] bg-white overflow-hidden group">
+                                <div
+                                    class="relative  overflow-hidden z-[1] before:content-[''] before:absolute before:w-[200px] before:h-[200px] before:bg-black2 before:top-[-100px] before:left-[-100px] before:opacity-30 before:z-[1] before:duration-500 before:rounded-full before:scale-50 before:translate-x-[-50%] group-hover:before:scale-[7]">
+                                    <img src="img/01/slide-box-2.jpg" alt="/"
+                                        class="group-hover:scale-110 duration-500 block w-full">
+                                </div>
+                                <div class="content bg-white flex justify-between items-center py-[15px] px-5">
+                                    <div class="clearfix">
+                                        <h6>
+                                            <a href="team-detail.html">
+                                                John Doe
+                                            </a>
+                                        </h6>
+                                        <span class="font-normal text-sm leading-5 text-primary">Senior Chef</span>
+                                    </div>
+                                    <ul class="team-social">
+                                        <li>
+                                            <a href="javascript:void(0);"
+                                                class="text-xl inline-block h-10 w-10 leading-10 text-center rounded-lg bg-primary text-white pt-[2px]">
+                                                <i class="flaticon-share"></i>
+                                            </a>
+                                            <ul
+                                                class="sub-team-social absolute bottom-[20px] z-[1] w-10 rounded-lg opacity-0 duration-500 	hover:opacity-100 hover:pb-[80px]">
+                                                <li class="mb-2 relative">
+                                                    <a href="javascript:void(0);"
+                                                        class="text-white duration-500 text-center text-lg bg-[#4867AA] h-10 w-10 flex items-center justify-center rounded-lg">
+                                                        <i class="fab fa-facebook-f"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-2 relative">
+                                                    <a href="javascript:void(0);"
+                                                        class="text-white duration-500 text-center text-lg bg-[#81B2DF] h-10 w-10 flex items-center justify-center rounded-lg">
+                                                        <i class="fab fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-2 relative">
+                                                    <a href="javascript:void(0);"
+                                                        class="text-white duration-500 text-center text-lg bg-[#D74141] h-10 w-10 flex items-center justify-center rounded-lg">
+                                                        <i class="fab fa-instagram"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-2 relative">
+                                                    <a href="javascript:void(0);"
+                                                        class="text-white duration-500 text-center text-lg bg-[#3A9DF9] h-10 w-10 flex items-center justify-center rounded-lg">
+                                                        <i class="fa-brands fa-linkedin-in"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" role="group" aria-label="1 / 8" data-swiper-slide-index="1">
+                        <div class="slide-box">
+                            <div
+                                class="shadow-[0_15px_55px_rgba(35,35,35,0.15)] rounded-[10px] bg-white overflow-hidden group">
+                                <div
+                                    class="relative  overflow-hidden z-[1] before:content-[''] before:absolute before:w-[200px] before:h-[200px] before:bg-black2 before:top-[-100px] before:left-[-100px] before:opacity-30 before:z-[1] before:duration-500 before:rounded-full before:scale-50 before:translate-x-[-50%] group-hover:before:scale-[7]">
+                                    <img src="img/01/slide-box-3.jpg" alt="/"
+                                        class="group-hover:scale-110 duration-500 block w-full">
+                                </div>
+                                <div class="content bg-white flex justify-between items-center py-[15px] px-5">
+                                    <div class="clearfix">
+                                        <h6>
+                                            <a href="team-detail.html">
+                                                Jemy carline
+                                            </a>
+                                        </h6>
+                                        <span class="font-normal text-sm leading-5 text-primary">Senior Chef</span>
+                                    </div>
+                                    <ul class="team-social group">
+                                        <li>
+                                            <a href="javascript:void(0);"
+                                                class="text-xl inline-block h-10 w-10 leading-10 text-center rounded-lg bg-primary text-white pt-[2px]">
+                                                <i class="flaticon-share"></i>
+                                            </a>
+                                            <ul
+                                                class="sub-team-social absolute bottom-[20px] z-[1] w-10 rounded-lg opacity-0 duration-500 hover:opacity-100 hover:pb-[80px]">
+                                                <li class="mb-2 relative">
+                                                    <a href="javascript:void(0);"
+                                                        class="text-white inline-block duration-500 text-center h-10 w-10 leading-10 text-lg">
+                                                        <i
+                                                            class="fab fa-facebook-f bg-[#4867AA] h-10 w-10 flex items-center justify-center rounded-lg"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-2 relative">
+                                                    <a href="javascript:void(0);"
+                                                        class="text-white inline-block duration-500 text-center h-10 w-10 leading-10 text-lg">
+                                                        <i
+                                                            class="fab fa-twitter bg-[#81B2DF] h-10 w-10 flex items-center justify-center rounded-lg"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-2 relative">
+                                                    <a href="javascript:void(0);"
+                                                        class="text-white inline-block duration-500 text-center h-10 w-10 leading-10 text-lg">
+                                                        <i
+                                                            class="fab fa-instagram bg-[#D74141] h-10 w-10 flex items-center justify-center rounded-lg"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-2 relative">
+                                                    <a href="javascript:void(0);"
+                                                        class="text-white inline-block duration-500 text-center h-10 w-10 leading-10 text-lg">
+                                                        <i
+                                                            class="fa-brands fa-linkedin-in bg-[#3A9DF9] h-10 w-10 flex items-center justify-center rounded-lg"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" role="group" aria-label="1 / 8" data-swiper-slide-index="2">
+                        <div class="slide-box">
+                            <div
+                                class="shadow-[0_15px_55px_rgba(35,35,35,0.15)] rounded-[10px] bg-white overflow-hidden group">
+                                <div
+                                    class="relative  overflow-hidden z-[1] before:content-[''] before:absolute before:w-[200px] before:h-[200px] before:bg-black2 before:top-[-100px] before:left-[-100px] before:opacity-30 before:z-[1] before:duration-500 before:rounded-full before:scale-50 before:translate-x-[-50%] group-hover:before:scale-[7]">
+                                    <img src="img/01/slide-box-4.jpg" alt="/"
+                                        class="group-hover:scale-110 duration-500 block w-full">
+                                </div>
+                                <div class="content bg-white flex justify-between items-center py-[15px] px-5">
+                                    <div class="clearfix">
+                                        <h6>
+                                            <a href="team-detail.html">
+                                                Cotline Care
+                                            </a>
+                                        </h6>
+                                        <span class="font-normal text-sm leading-5 text-primary">Senior Chef</span>
+                                    </div>
+                                    <ul class="team-social">
+                                        <li>
+                                            <a href="javascript:void(0);"
+                                                class="text-xl inline-block h-10 w-10 leading-10 text-center rounded-lg bg-primary text-white pt-[2px]">
+                                                <i class="flaticon-share"></i>
+                                            </a>
+                                            <ul
+                                                class="sub-team-social absolute bottom-[20px] z-[1] w-10 rounded-lg opacity-0 duration-500 	hover:opacity-100 hover:pb-[80px]">
+                                                <li class="mb-2 relative">
+                                                    <a href="javascript:void(0);"
+                                                        class="text-white duration-500 text-center text-lg bg-[#4867AA] h-10 w-10 flex items-center justify-center rounded-lg">
+                                                        <i class="fab fa-facebook-f"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-2 relative">
+                                                    <a href="javascript:void(0);"
+                                                        class="text-white duration-500 text-center text-lg bg-[#81B2DF] h-10 w-10 flex items-center justify-center rounded-lg">
+                                                        <i class="fab fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-2 relative">
+                                                    <a href="javascript:void(0);"
+                                                        class="text-white duration-500 text-center text-lg bg-[#D74141] h-10 w-10 flex items-center justify-center rounded-lg">
+                                                        <i class="fab fa-instagram"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-2 relative">
+                                                    <a href="javascript:void(0);"
+                                                        class="text-white duration-500 text-center text-lg bg-[#3A9DF9] h-10 w-10 flex items-center justify-center rounded-lg">
+                                                        <i class="fa-brands fa-linkedin-in"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" role="group" aria-label="1 / 8" data-swiper-slide-index="3">
+                        <div class="slide-box">
+                            <div
+                                class="shadow-[0_15px_55px_rgba(35,35,35,0.15)] rounded-[10px] bg-white overflow-hidden group">
+                                <div
+                                    class="relative  overflow-hidden z-[1] before:content-[''] before:absolute before:w-[200px] before:h-[200px] before:bg-black2 before:top-[-100px] before:left-[-100px] before:opacity-30 before:z-[1] before:duration-500 before:rounded-full before:scale-50 before:translate-x-[-50%] group-hover:before:scale-[7]">
+                                    <img src="img/01/slide-box-3.jpg" alt="/"
+                                        class="group-hover:scale-110 duration-500 block w-full">
+                                </div>
+                                <div class="content bg-white flex justify-between items-center py-[15px] px-5">
+                                    <div class="clearfix">
+                                        <h6>
+                                            <a href="team-detail.html">
+                                                Jemy carline
+                                            </a>
+                                        </h6>
+                                        <span class="font-normal text-sm leading-5 text-primary">Senior Chef</span>
+                                    </div>
+                                    <ul class="team-social group">
+                                        <li>
+                                            <a href="javascript:void(0);"
+                                                class="text-xl inline-block h-10 w-10 leading-10 text-center rounded-lg bg-primary text-white pt-[2px]">
+                                                <i class="flaticon-share"></i>
+                                            </a>
+                                            <ul
+                                                class="sub-team-social absolute bottom-[20px] z-[1] w-10 rounded-lg opacity-0 duration-500 hover:opacity-100 hover:pb-[80px]">
+                                                <li class="mb-2 relative">
+                                                    <a href="javascript:void(0);"
+                                                        class="text-white inline-block duration-500 text-center h-10 w-10 leading-10 text-lg">
+                                                        <i
+                                                            class="fab fa-facebook-f bg-[#4867AA] h-10 w-10 flex items-center justify-center rounded-lg"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-2 relative">
+                                                    <a href="javascript:void(0);"
+                                                        class="text-white inline-block duration-500 text-center h-10 w-10 leading-10 text-lg">
+                                                        <i
+                                                            class="fab fa-twitter bg-[#81B2DF] h-10 w-10 flex items-center justify-center rounded-lg"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-2 relative">
+                                                    <a href="javascript:void(0);"
+                                                        class="text-white inline-block duration-500 text-center h-10 w-10 leading-10 text-lg">
+                                                        <i
+                                                            class="fab fa-instagram bg-[#D74141] h-10 w-10 flex items-center justify-center rounded-lg"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-2 relative">
+                                                    <a href="javascript:void(0);"
+                                                        class="text-white inline-block duration-500 text-center h-10 w-10 leading-10 text-lg">
+                                                        <i
+                                                            class="fa-brands fa-linkedin-in bg-[#3A9DF9] h-10 w-10 flex items-center justify-center rounded-lg"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" role="group" aria-label="1 / 8" data-swiper-slide-index="4">
+                        <div class="slide-box">
+                            <div
+                                class="shadow-[0_15px_55px_rgba(35,35,35,0.15)] rounded-[10px] bg-white overflow-hidden group">
+                                <div
+                                    class="relative  overflow-hidden z-[1] before:content-[''] before:absolute before:w-[200px] before:h-[200px] before:bg-black2 before:top-[-100px] before:left-[-100px] before:opacity-30 before:z-[1] before:duration-500 before:rounded-full before:scale-50 before:translate-x-[-50%] group-hover:before:scale-[7]">
+                                    <img src="img/01/slide-box-4.jpg" alt="/"
+                                        class="group-hover:scale-110 duration-500 block w-full">
+                                </div>
+                                <div class="content bg-white flex justify-between items-center py-[15px] px-5">
+                                    <div class="clearfix">
+                                        <h6>
+                                            <a href="team-detail.html">
+                                                Cotline Care
+                                            </a>
+                                        </h6>
+                                        <span class="font-normal text-sm leading-5 text-primary">Senior Chef</span>
+                                    </div>
+                                    <ul class="team-social">
+                                        <li>
+                                            <a href="javascript:void(0);"
+                                                class="text-xl inline-block h-10 w-10 leading-10 text-center rounded-lg bg-primary text-white pt-[2px]">
+                                                <i class="flaticon-share"></i>
+                                            </a>
+                                            <ul
+                                                class="sub-team-social absolute bottom-[20px] z-[1] w-10 rounded-lg opacity-0 duration-500 	hover:opacity-100 hover:pb-[80px]">
+                                                <li class="mb-2 relative">
+                                                    <a href="javascript:void(0);"
+                                                        class="text-white duration-500 text-center text-lg bg-[#4867AA] h-10 w-10 flex items-center justify-center rounded-lg">
+                                                        <i class="fab fa-facebook-f"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-2 relative">
+                                                    <a href="javascript:void(0);"
+                                                        class="text-white duration-500 text-center text-lg bg-[#81B2DF] h-10 w-10 flex items-center justify-center rounded-lg">
+                                                        <i class="fab fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-2 relative">
+                                                    <a href="javascript:void(0);"
+                                                        class="text-white duration-500 text-center text-lg bg-[#D74141] h-10 w-10 flex items-center justify-center rounded-lg">
+                                                        <i class="fab fa-instagram"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-2 relative">
+                                                    <a href="javascript:void(0);"
+                                                        class="text-white duration-500 text-center text-lg bg-[#3A9DF9] h-10 w-10 flex items-center justify-center rounded-lg">
+                                                        <i class="fa-brands fa-linkedin-in"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" role="group" aria-label="1 / 8" data-swiper-slide-index="5">
+                        <div class="slide-box">
+                            <div
+                                class="shadow-[0_15px_55px_rgba(35,35,35,0.15)] rounded-[10px] bg-white overflow-hidden group">
+                                <div
+                                    class="relative  overflow-hidden z-[1] before:content-[''] before:absolute before:w-[200px] before:h-[200px] before:bg-black2 before:top-[-100px] before:left-[-100px] before:opacity-30 before:z-[1] before:duration-500 before:rounded-full before:scale-50 before:translate-x-[-50%] group-hover:before:scale-[7]">
+                                    <img src="img/01/slide-box-3.jpg" alt="/"
+                                        class="group-hover:scale-110 duration-500 block w-full">
+                                </div>
+                                <div class="content bg-white flex justify-between items-center py-[15px] px-5">
+                                    <div class="clearfix">
+                                        <h6>
+                                            <a href="team-detail.html">
+                                                Jemy carline
+                                            </a>
+                                        </h6>
+                                        <span class="font-normal text-sm leading-5 text-primary">Senior Chef</span>
+                                    </div>
+                                    <ul class="team-social group">
+                                        <li>
+                                            <a href="javascript:void(0);"
+                                                class="text-xl inline-block h-10 w-10 leading-10 text-center rounded-lg bg-primary text-white pt-[2px]">
+                                                <i class="flaticon-share"></i>
+                                            </a>
+                                            <ul
+                                                class="sub-team-social absolute bottom-[20px] z-[1] w-10 rounded-lg opacity-0 duration-500 hover:opacity-100 hover:pb-[80px]">
+                                                <li class="mb-2 relative">
+                                                    <a href="javascript:void(0);"
+                                                        class="text-white inline-block duration-500 text-center h-10 w-10 leading-10 text-lg">
+                                                        <i
+                                                            class="fab fa-facebook-f bg-[#4867AA] h-10 w-10 flex items-center justify-center rounded-lg"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-2 relative">
+                                                    <a href="javascript:void(0);"
+                                                        class="text-white inline-block duration-500 text-center h-10 w-10 leading-10 text-lg">
+                                                        <i
+                                                            class="fab fa-twitter bg-[#81B2DF] h-10 w-10 flex items-center justify-center rounded-lg"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-2 relative">
+                                                    <a href="javascript:void(0);"
+                                                        class="text-white inline-block duration-500 text-center h-10 w-10 leading-10 text-lg">
+                                                        <i
+                                                            class="fab fa-instagram bg-[#D74141] h-10 w-10 flex items-center justify-center rounded-lg"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-2 relative">
+                                                    <a href="javascript:void(0);"
+                                                        class="text-white inline-block duration-500 text-center h-10 w-10 leading-10 text-lg">
+                                                        <i
+                                                            class="fa-brands fa-linkedin-in bg-[#3A9DF9] h-10 w-10 flex items-center justify-center rounded-lg"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" role="group" aria-label="1 / 8" data-swiper-slide-index="6">
+                        <div class="slide-box">
+                            <div
+                                class="shadow-[0_15px_55px_rgba(35,35,35,0.15)] rounded-[10px] bg-white overflow-hidden group">
+                                <div
+                                    class="relative  overflow-hidden z-[1] before:content-[''] before:absolute before:w-[200px] before:h-[200px] before:bg-black2 before:top-[-100px] before:left-[-100px] before:opacity-30 before:z-[1] before:duration-500 before:rounded-full before:scale-50 before:translate-x-[-50%] group-hover:before:scale-[7]">
+                                    <img src="img/01/slide-box-4.jpg" alt="/"
+                                        class="group-hover:scale-110 duration-500 block w-full">
+                                </div>
+                                <div class="content bg-white flex justify-between items-center py-[15px] px-5">
+                                    <div class="clearfix">
+                                        <h6>
+                                            <a href="team-detail.html">
+                                                Cotline Care
+                                            </a>
+                                        </h6>
+                                        <span class="font-normal text-sm leading-5 text-primary">Senior Chef</span>
+                                    </div>
+                                    <ul class="team-social">
+                                        <li>
+                                            <a href="javascript:void(0);"
+                                                class="text-xl inline-block h-10 w-10 leading-10 text-center rounded-lg bg-primary text-white pt-[2px]">
+                                                <i class="flaticon-share"></i>
+                                            </a>
+                                            <ul
+                                                class="sub-team-social absolute bottom-[20px] z-[1] w-10 rounded-lg opacity-0 duration-500 	hover:opacity-100 hover:pb-[80px]">
+                                                <li class="mb-2 relative">
+                                                    <a href="javascript:void(0);"
+                                                        class="text-white duration-500 text-center text-lg bg-[#4867AA] h-10 w-10 flex items-center justify-center rounded-lg">
+                                                        <i class="fab fa-facebook-f"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-2 relative">
+                                                    <a href="javascript:void(0);"
+                                                        class="text-white duration-500 text-center text-lg bg-[#81B2DF] h-10 w-10 flex items-center justify-center rounded-lg">
+                                                        <i class="fab fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-2 relative">
+                                                    <a href="javascript:void(0);"
+                                                        class="text-white duration-500 text-center text-lg bg-[#D74141] h-10 w-10 flex items-center justify-center rounded-lg">
+                                                        <i class="fab fa-instagram"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-2 relative">
+                                                    <a href="javascript:void(0);"
+                                                        class="text-white duration-500 text-center text-lg bg-[#3A9DF9] h-10 w-10 flex items-center justify-center rounded-lg">
+                                                        <i class="fa-brands fa-linkedin-in"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-nav">
+                    <div class="swiper-button-prev team-button-prev Master-btn-prev group hover:before:animate-spin">
+                        <i class="fa-solid fa-arrow-left text-white group-hover:text-[var(--primary)] relative"></i>
+                    </div>
+                    <div class="swiper-button-next team-button-next Master-btn-next group hover:before:animate-spin">
+                        <i class="fa-solid fa-arrow-right text-white group-hover:text-[var(--primary)] relative"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Map -->
+
+
+    <div class="map-iframe style-1 relative">
+        <iframe class="w-full lg:h-[400px] sm:h-[350px] h-[300px] mb-[-10px]"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d244934.17139458598!2d75.27787773507539!3d25.125368923263647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1678086292169!5m2!1sen!2sin">
+
+        </iframe>
+    </div>
+
+    <!-- footer -->
+
+    <div class="site-footer style-1 bg-black2 relative">
+        <div class="xl:pt-[85px] md:pt-[80px] pt-[60px] lg:pb-10 md:pb-5 p-0 relative z-[2]">
+            <div class="container mx-auto px-[15px]">
+                <div class="row mx-auto w-[1200px]">
+                    <div class="row flex flex-wrap">
+                        <div class="lg:w-5/12 w-full pl-[15px] pr-[15px] mb-[26px]">
+                            <div
+                                class="rounded-[10px] md:pt-10 md:px-10 p-5 md:pb-[50px] bg-[var(--primary)] xl:mt-[-385px] lg:mt-[-390px] mt-0">
+                                <div class="section-head mb-[30px] relative mx-auto">
+                                    <h5 class="font-lobster text-white text-[45px] leading-[56px] font-normal">Contact
+                                        us</h5>
+                                    <p class="font-poppins text-white mt-[10px] text-base opacity-80">Lorem Ipsum is
+                                        simply dummy text of the printing and typesetting industry.</p>
+                                </div>
+                                <form class="dzForm dezPlaceAni" method="POST" action="assets/script/contact_smtp.php">
+                                    <input type="hidden" class="form-control" name="dzToDo" value="Contact">
+                                    <input type="hidden" class="form-control" name="reCaptchaEnable" value="0">
+                                    <div class="dzFormMsg"></div>
+
+                                    <div class="w-full relative group">
+                                        <div
+                                            class="input-group input-line relative mb-[30px] after:content-[''] after:bg-white after:absolute after:h-[2px] after:w-full after:left-0 after:bottom-0 after:opacity-25 items-center flex flex-wrap before:content-[''] before:w-0 before:bg-white before:duration-300 before:absolute before:h-[2px] before:left-0 before:bottom-0 group-hover:before:w-full">
+                                            <input name="dzName" required="" type="text"
+                                                class="flex-1 input-bg focus:ring-0 placeholder:text-white text-white border-none outline-none pl-0 pb-[15px]"
+                                                placeholder="Your Name">
+                                        </div>
+                                    </div>
+                                    <div class="w-full group">
+                                        <div
+                                            class="input-group input-line relative mb-[30px] items-center flex flex-wrap after:content-[''] after:bg-white after:absolute after:h-[2px] after:w-full after:left-0 after:bottom-0 after:opacity-25 before:content-[''] before:w-0 before:bg-white before:duration-300 before:absolute before:h-[2px] before:left-0 before:bottom-0 group-hover:before:w-full">
+                                            <input name="dzEmail" required="" type="email"
+                                                class="flex-1 bg-transparent border-none outline-none focus:ring-0 placeholder:text-white text-white pl-0 pb-[15px]"
+                                                placeholder="Email Address">
+                                        </div>
+                                    </div>
+                                    <div class="w-full group">
+                                        <div
+                                            class="input-group input-line relative mb-[30px] items-center flex flex-wrap after:content-[''] after:bg-white after:absolute after:h-[2px] after:w-full after:left-0 after:bottom-0 after:opacity-25 before:content-[''] before:w-0 before:bg-white before:duration-300 before:absolute before:h-[2px] before:left-0 before:bottom-0 group-hover:before:w-full">
+                                            <input name="dzOther[Subject]" required="" type="text"
+                                                class="flex-1 bg-transparent focus:ring-0 placeholder:text-white text-white border-none outline-none pl-0 pb-[15px]"
+                                                placeholder="Subject">
+                                        </div>
+                                    </div>
+                                    <div class="w-full group">
+                                        <div
+                                            class="input-group input-line relative mb-[30px] items-center flex flex-wrap after:content-[''] after:bg-white after:absolute after:h-[2px] after:w-full after:left-0 after:bottom-0 after:opacity-25 before:content-[''] before:w-0 before:bg-white before:duration-300 before:absolute before:h-[2px] before:left-0 before:bottom-0 group-hover:before:w-full">
+                                            <textarea name="dzMessage" required=""
+                                                class="flex-1 bg-transparent focus:ring-0 placeholder:text-white text-white border-none outline-none h-[120px] resize-none pl-0 pb-[15px]"
+                                                placeholder="Message" data-gramm="false"
+                                                wt-ignore-input="true"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="w-full">
+                                        <button type="submit" name="submit" value="submit"
+                                            class="btn-lg btn-hover-1 py-[15px] px-[30px] btn btn-white bg-white font-medium text-base leading-2xl overflow-hidden z-[1] text-black2 rounded-[6px] relative inline-flex items-center justify-center duration-500 focus:ring-0"
+                                            fdprocessedid="ojx1h">
+                                            <span class="font-poppins">Send Message</span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="lg:w-1/4 md:w-5/12 w-full pl-[15px] pr-[15px]">
+                            <div class=" sm:mb-[30px] mb-2.5">
+                                <h5
+                                    class="footer-title lg:mb-[30px] mb-5 text-white lg:text-2xl text-xl uppercase font-poppins font-semibold">
+                                    Contact</h5>
+                                <ul>
+                                    <li class="relative mb-[25px] pl-10 font-poppins">
+                                        <img class="absolute text-3xl leading-[30px] left-0 top-[5px] text-primary w-[30px] h-[30px]"
+                                            src="img/01/bg-primary-maps-and-flags.png" alt="">
+                                        <p class="text-[#CCCCCC] font-poppins text-sm tracking-wide leading-6">
+                                            1247/Plot No. 39, 15th Phase, Colony, Kkatpally, Hyderabad
+                                        </p>
+                                    </li>
+
+                                    <li class="relative mb-[25px] pl-10 font-poppins">
+                                        <img class="absolute text-3xl leading-[30px] left-0 top-[5px] text-primary w-[30px] h-[30px]"
+                                            src="img/01/bg-primary-telephone.png" alt="">
+                                        <p class="text-[#CCCCCC] font-poppins text-sm tracking-wide leading-6">
+                                            +91 987-654-3210<br>+91 987-654-3211
+                                        </p>
+                                    </li>
+
+                                    <li class="relative mb-[25px] pl-10 font-poppins">
+                                        <img class="absolute text-3xl leading-[30px] left-0 top-[5px] text-primary w-[30px] h-[30px]"
+                                            src="img/01/bg-primary-mail.png" alt="">
+                                        <p class="text-[#CCCCCC] font-poppins text-sm tracking-wide leading-6">
+                                            info@example.com <br>
+                                            info@example.com
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="lg:w-1/6 md:w-1/4 sm:w-1/2 w-full pl-[15px] pr-[15px]">
+                            <div class="widget widget_services mb-[30px]">
+                                <h5
+                                    class="footer-title font-poppins mb-[30px] xl:text-2xl text-xl font-semibold text-white uppercase leading-[1.1]">
+                                    Our Links
+                                </h5>
+                                <ul>
+                                    <li><a href="index.html"><span class="font-poppins">Home</span></a></li>
+                                    <li><a href="index.html"><span class="font-poppins">About Us</span></a></li>
+                                    <li><a href="index.html"><span class="font-poppins">Services</span></a></li>
+                                    <li><a href="index.html"><span class="font-poppins">Team</span></a></li>
+                                    <li><a href="index.html"><span class="font-poppins">Blog</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="lg:w-1/6 md:w-1/4 sm:w-1/2 w-full pl-[15px] pr-[15px]">
+                            <div class="widget widget_services mb-[30px]">
+                                <h5
+                                    class="footer-title font-poppins mb-[30px] xl:text-2xl text-xl font-semibold text-white uppercase leading-[1.1]">
+                                    Help Center
+                                </h5>
+                                <ul>
+                                    <li><a href="index.html"><span class="font-poppins">FAQ</span></a></li>
+                                    <li><a href="index.html"><span class="font-poppins">Shop</span></a></li>
+                                    <li><a href="index.html"><span class="font-poppins">Category Filter</span></a></li>
+                                    <li><a href="index.html"><span class="font-poppins">Testimonials</span></a></li>
+                                    <li><a href="index.html"><span class="font-poppins">Contact Us</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto px-[15px]">
+            <div class="row w-[1200px] mx-auto">
+                <div class="footer-bottom relative border-t border-[#ffffff1a] mx-[15px] py-5">
+                    <div class="last-footer mx-[-15px] flex flex-wrap">
+                        <div class="md:w-1/2 w-full md:text-left text-center pl-[15px] pr-[15px]">
+                            <p class="text-sm text-[#999999] font-poppins">Copyright 2024 All rights reserved.</p>
+                        </div>
+
+                        <div class="md:w-1/2 w-full md:text-right text-center px-[15px] md:mt-0 mt-[15px]">
+                            <span class="text-sm font-poppins text-[#999999]">
+                                Crafted With <span
+                                    class="bg-heart w-[60px] h-[60px] inline-block my-[-25px] mx-[-18px]"></span>
+                                By
+                                <a href="#" class="text-[var(--primary)]">DexignZone</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="img/01/bg-temenos.png" class="bg1 bottom-[10px] left-0 absolute max-2xl:hidden animate-dz" alt="">
+        <img src="img/01/bg-white-nuts.png"
+            class="bg2 right-[40px] max-2xl:right-0 top-[100px] max-2xl:top-[28px] absolute 2xl:block" alt="">
+    </div>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="Js/index.js"></script>
+    <script src="./Js/tailwind.config.js"></script>
+
+</body>
+
+</html>
